@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">RankTracker</a>
+        </div>
+    </div>
+</nav>
+<div class="clearfix"></div>
+<div class='container-fluid'>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="inputKeyWords">Keyords</label>
+            <input type="text" required class="form-control" [(ngModel)]="keywords" id="inputKeyWords" placeholder="Keywords">
+        </div>
+        <div class="col-md-2">
+            <label for="inputUrl">Url</label>
+            <input type="text" required class="form-control" [(ngModel)]="urlToBeSearched" id="inputUrl" placeholder="Url">
+        </div>
+    </div>
+    <div class="row mt-3">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary" (click)="getRankNumber()">Search</button>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+    <div *ngIf="showLoading" class="row mt-3">&nbsp;</div>
+    <div class="row">
+        <div *ngIf="showLoading">
+            <span><b>Searching....</b></span>
+        </div>        
+    </div>
+    <div class="row mt-3">&nbsp;</div>
+    <div class="row">
+        <div *ngIf="results != ''" class="col-md-2">
+            <span><b>Rank Of the Website found at following places:</b>{{results}}</span>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
