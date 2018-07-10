@@ -1,15 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
-using RankTrackerUtilities;
-using System.Xml;
-using System.Xml.Linq;
-using System.Text;
-using System.Linq;
-using System.Collections.Generic;
-using System.Xml.XPath;
 using RankTrackerInfrastructure;
-using System.Reflection;
 
 namespace RankTrackerTests
 {
